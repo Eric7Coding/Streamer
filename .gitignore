@@ -1,6 +1,4 @@
 .DS_Store
 *.pro.user
-bin/Debug/*
-bin/Release/*
-lib/rtmp/lib/Debug/*
-lib/rtmp/lib/Release/*
+bin/*
+lib/rtmp/lib/*
