@@ -44,11 +44,8 @@ Streamer::~Streamer()
     Logger::Log::GetInstance().wait();
     Logger::Log::GetInstance().deleteLater();
 
-    if (ui)
-    {
-        delete ui;
-        ui = nullptr;
-    }
+    delete ui;
+    ui = nullptr;
 }
 
 // Initialize all plugins(modules)

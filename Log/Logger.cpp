@@ -20,11 +20,9 @@ namespace Logger
     Log::~Log()
     {
         if (_file_log)
-        {
             _file_log->close();
-            delete _file_log;
-            _file_log = nullptr;
-        }
+        delete _file_log;
+        _file_log = nullptr;
     }
 
     void Log::run()

@@ -22,11 +22,8 @@ Address::~Address()
     disconnect(this, &Address::send, this, &Address::close);
     disconnect(this, &Address::send, this, &Address::deleteLater);
 
-    if (ui)
-    {
-        delete ui;
-        ui = nullptr;
-    }
+    delete ui;
+    ui = nullptr;
 }
 
 void Address::on_OKbtn_clicked()

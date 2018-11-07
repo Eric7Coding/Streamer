@@ -27,23 +27,14 @@ namespace Push
 
     RtmpPush::~RtmpPush()
     {
-        if (_url_addr)
-        {
-            delete _url_addr;
-            _url_addr = nullptr;
-        }
+        delete _url_addr;
+        _url_addr = nullptr;
 
-        if (_buffer)
-        {
-            delete[] _buffer;
-            _buffer = nullptr;
-        }
+        delete[] _buffer;
+        _buffer = nullptr;
 
-        if (_meta_data)
-        {
-            delete _meta_data;
-            _meta_data = nullptr;
-        }
+        delete _meta_data;
+        _meta_data = nullptr;
 
         Logger::LogMessage* log
             = new Logger::LogMessage
