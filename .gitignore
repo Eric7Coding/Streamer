@@ -2,3 +2,4 @@
 *.pro.user
 bin/*
 lib/rtmp/lib/*
+tags
